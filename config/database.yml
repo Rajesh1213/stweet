@@ -1,0 +1,9 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  host: localhost
+  database: stweet-app
+  pool: 5
+  username: root
+  password: root
