@@ -1,0 +1,41 @@
+<div style="padding-left:100px;">
+  <h3>Update Your Profile</h3>
+
+  <%= form_for @user_profile,:url => {:action => "create" } do |f| %>
+
+      <div class="field">
+        <%= f.hidden_field :user_id,:value => current_user.id %>
+      </div>
+
+      <div class="field">
+        <label>Upload Photo</label><br />
+        <%= f.file_field :attachment %>
+      </div>
+
+
+      <div class="field">
+        <label>Age</label><br />
+        <%= f.text_field :age, :value => @user_profile.age.present? ? @user_profile.age : ""%>
+      </div>
+
+      <div class="field">
+        <label>Gender</label><br />
+        <%= f.select :sex ,options_for_select([["Select", ""], ["Male", "Male"],["Female", "Female"]]) %>
+      </div>
+
+      <div class="field">
+        <label>Secondary Email</label><br />
+        <%= f.text_field :secondary_email,:value => @user_profile.secondary_email.present? ? @user_profile.secondary_email : ""%>
+
+      </div>
+
+      <div class="field">
+       <label>Secondary Phone Number</label><br />
+        <%= f.text_field :secondary_phone_number, :value => @user_profile.secondary_phone_number.present? ? @user_profile.secondary_phone_number : ""%>
+      </div></br>
+
+      <div class="actions">
+        <%= f.submit "UPDATE",:class => "btn btn-success"%>
+      </div>
+  <% end %>
+</div>
