@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160506120823) do
+ActiveRecord::Schema.define(version: 20160508171422) do
+
+  create_table "tweets", force: :cascade do |t|
+    t.text     "body",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "user_profiles", force: :cascade do |t|
     t.integer  "age",                    limit: 4
@@ -23,6 +29,16 @@ ActiveRecord::Schema.define(version: 20160506120823) do
     t.datetime "updated_at",                         null: false
     t.string   "attachment",             limit: 255
   end
+
+  create_table "user_tweets", force: :cascade do |t|
+    t.integer  "user_id",    limit: 4
+    t.integer  "tweet_id",   limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  add_index "user_tweets", ["tweet_id"], name: "index_user_tweets_on_tweet_id", using: :btree
+  add_index "user_tweets", ["user_id"], name: "index_user_tweets_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -44,4 +60,6 @@ ActiveRecord::Schema.define(version: 20160506120823) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "user_tweets", "tweets"
+  add_foreign_key "user_tweets", "users"
 end

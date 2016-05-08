@@ -1,0 +1,6 @@
+<% if @errors.present? %>
+console.log("<%= @errors.join(",") %>");
+<% else %>
+console.log("Saved Tweet : <%= @tweet.body %>");
+$("#new_tweet")[0].reset();
+<% end %>

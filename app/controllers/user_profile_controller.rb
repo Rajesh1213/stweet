@@ -1,6 +1,6 @@
 class UserProfileController < ApplicationController
   before_action :authenticate_user!
-  before_action :populate_user_profile, :only => [:create,:update,:edit]
+  before_action :populate_user_profile, :only => [:update,:edit]
 
   def index
   end
@@ -10,15 +10,9 @@ class UserProfileController < ApplicationController
   end
 
   def create
-    if @user_profile
-      @user_profile.update_attributes(user_profile_params)
-      redirect_to root_path
-    else
-      @user_profile = UserProfile.new(user_profile_params)
+      @user_profile = current_user.user_profile.new(user_profile_params)
       @user_profile.save
       redirect_to root_path
-    end
-    @user_profile = UserProfile.where(:user_id => user_profile_params[:user_id]).order("created_at DESC")
   end
 
   def edit
