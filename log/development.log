@@ -9714,3 +9714,2153 @@ Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-06 19:09:24 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:27:19 +0530
+
+ActiveRecord::NoDatabaseError (Unknown database 'stweet-app'):
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.8ms)
+  [1m[36m (347.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (221.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20160506060447)
+  [1m[35m (84.6ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (155.3ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (166.5ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160506060447')
+  [1m[36m (42.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddNameToUsers (20160506070221)
+  [1m[35m (255.1ms)[0m  ALTER TABLE `users` ADD `name` varchar(255)
+  [1m[36m (267.2ms)[0m  [1mALTER TABLE `users` ADD `phone_number` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160506070221')[0m
+  [1m[35m (54.3ms)[0m  COMMIT
+Migrating to CreateUserProfiles (20160506071453)
+  [1m[36m (99.6ms)[0m  [1mCREATE TABLE `user_profiles` (`id` int(11) auto_increment PRIMARY KEY, `age` int(11), `sex` varchar(255), `secondary_email` varchar(255), `secondary_phone_number` varchar(255), `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160506071453')[0m
+  [1m[35m (43.2ms)[0m  COMMIT
+Migrating to AddAttachmentToUserProfiles (20160506120823)
+  [1m[36m (222.5ms)[0m  [1mALTER TABLE `user_profiles` ADD `attachment` varchar(255)[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20160506120823')[0m
+  [1m[35m (43.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'stweet-app'
+  AND fk.table_name = 'user_profiles'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `user_profiles`[0m
+  [1m[35m (0.3ms)[0m  SELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'stweet-app'
+  AND fk.table_name = 'users'
+
+  [1m[36m (0.2ms)[0m  [1mSHOW CREATE TABLE `users`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:27:51 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:27:51 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.5ms)
+  Rendered shared/_header.html.erb (0.8ms)
+Completed 200 OK in 4294ms (Views: 4274.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:27:55 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:28:21 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.5ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:30:22 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:31:38 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:39 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.6ms)
+  Rendered shared/_header.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:31:40 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.9ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:32:26 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:33:37 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:33:47 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:33:54 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (4.1ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:34:07 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:34:09 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-08 20:36:24 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bdXdLpDT0DRqw2wToj6nPyInDjluCiGzj1Nay4ds+aN439WTdgU+DGQ6uMrryNcFEXY8b3WHHmsG2Ae2KvkGUw==", "user"=>{"name"=>"Santosh Mohanty", "email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone_number"=>"12345678"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, phone_number
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (30.0ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'santa.jyp@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('santa.jyp@gmail.com', '$2a$11$2f.h7HaM5IMDHD0KRZebUuP85jTuhdM91EqrEw1WaE.8CqbXsdz.K', '2016-05-08 15:06:24', '2016-05-08 15:06:24')
+  [1m[36m (44.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (20.0ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2016-05-08 15:06:24', `current_sign_in_at` = '2016-05-08 15:06:24', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-05-08 15:06:24' WHERE `users`.`id` = 1[0m
+  [1m[35m (48.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 338ms (ActiveRecord: 145.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:36:25 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 1 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `attachment' for nil:NilClass):
+    4:       <p class="lead">
+    5:         You have Successfully Signed in!
+    6:       </p>
+    7:       <%= image_tag @user_profile.attachment.url %>
+    8:   <% else %>
+    9:       <h6>Welcome, new user!</h6>
+   10:       <p class="lead">
+  app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb___242490772854318587_69929173164700'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUserProfile Load (0.4ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 1 LIMIT 1
+  [1m[36mSQL (20.5ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  [1m[35m (41.3ms)[0m  COMMIT
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bdXdLpDT0DRqw2wToj6nPyInDjluCiGzj1Nay4ds+aN439WTdgU+DGQ6uMrryNcFEXY8b3WHHmsG2Ae2KvkGUw==", "user"=>{"name"=>"Santosh Mohanty", "email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone_number"=>"12345678"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+DEPRECATION WARNING: [Devise] Changing the sanitized parameters through "Devise::ParameterSanitizer#for(sign_up) is deprecated and it will be removed from Devise 4.2.
+Please use the `permit` method:
+
+  devise_parameter_sanitizer.permit(:sign_up) do |user|
+    # Your block here.
+  end
+ (called from update_sanitized_params at /home/jyoti/Projects/stweet/app/controllers/application_controller.rb:9)
+Unpermitted parameters: email, password, password_confirmation
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered devise/registrations/new.html.erb within layouts/application (17.8ms)
+  Rendered shared/_header.html.erb (0.8ms)
+Completed 200 OK in 425ms (Views: 365.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:37 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:38 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:38 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:38 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:38 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:43:38 +0530
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-08 20:48:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tA3JKCD4gNnTV5cYIB5XvPDRLeFIBdQuwqTG27k1wWyhB8GVxi5u4d2uQ8Fp6CeGw4Aft1OI6/ZLL5umFKA+nA==", "user"=>{"name"=>"Santosh Mohanty", "email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone_number"=>"12345678"}, "commit"=>"Sign up"}
+Unpermitted parameters: email, password, password_confirmation
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/registrations/new.html.erb within layouts/application (20.4ms)
+  Rendered shared/_header.html.erb (0.8ms)
+Completed 200 OK in 296ms (Views: 244.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-08 20:49:18 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+iYJfAz8U2/GmGZcKL7iX2B6wHg5aRfMd3oEzyRnAvW4pCYFuUfdbHjtUA5VIuzTtDZV/tom4e4VrVukQRj+w==", "user"=>{"name"=>"Santosh Mohanty", "email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone_number"=>"12345678"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'santa.jyp@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `users` (`name`, `phone_number`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Santosh Mohanty', '12345678', 'santa.jyp@gmail.com', '$2a$11$hsjvlP7J9L6dO2OFEqFrbuyeanOlGzZ0kVn8dzcPTA.KHpo4ycUBS', '2016-05-08 15:19:18', '2016-05-08 15:19:18')
+  [1m[36m (44.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2016-05-08 15:19:18', `current_sign_in_at` = '2016-05-08 15:19:18', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-05-08 15:19:18' WHERE `users`.`id` = 2[0m
+  [1m[35m (49.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 95.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:49:18 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 2 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `attachment' for nil:NilClass):
+    4:       <p class="lead">
+    5:         You have Successfully Signed in!
+    6:       </p>
+    7:       <%= image_tag @user_profile.attachment.url %>
+    8:   <% else %>
+    9:       <h6>Welcome, new user!</h6>
+   10:       <p class="lead">
+  app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__4400629217024938657_70225387325600'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (1.9ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.5ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 2 LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 2 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 20:50:43 +0530
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 20:50:52 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_header.html.erb (0.6ms)
+Completed 200 OK in 47ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:51:17 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 2 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUserProfile Load (0.5ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 2 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = 2[0m
+  [1m[35m (59.6ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:51:36 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:51:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.7ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:51:40 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (4.1ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:57:08 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:57:08 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 33.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-05-08 20:57:12 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (3.9ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-05-08 20:57:49 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V56/DZ71UyW8y1L1wIj9x0rmPaZJdjLw+apKilGl5RdClLeweCO9HbIyhiyJfo39ebcP8FL7DShwIRf3/DAa5w==", "user"=>{"name"=>"Santosh Mohanty", "email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone_number"=>"12345678"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'santa.jyp@gmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `phone_number`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('Santosh Mohanty', '12345678', 'santa.jyp@gmail.com', '$2a$11$g1gThi1K3RehcLrbwH210.d5ySvlKRUGt5ov86Ypy47zaNswHE8nu', '2016-05-08 15:27:49', '2016-05-08 15:27:49')[0m
+  [1m[35m (70.1ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2016-05-08 15:27:49', `current_sign_in_at` = '2016-05-08 15:27:49', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2016-05-08 15:27:49' WHERE `users`.`id` = 3
+  [1m[36m (52.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 123.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:57:49 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 20:57:50 +0530
+Processing by UserProfileController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered user_profile/new.html.erb within layouts/application (2.3ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/user_profile" for 127.0.0.1 at 2016-05-08 20:58:26 +0530
+Processing by UserProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kvv7B6IzGjN5NRrGesuwxbhK1KWaZU32AA7N9Au+mD2H8fO6ROX0C3fMzh8zPcD/ixvm84Hoci6JhZCJpitnzQ==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fbd3f8e1620 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-29034-73kgt8.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"29", "sex"=>"Male", "secondary_email"=>"", "secondary_phone_number"=>""}, "commit"=>"UPDATE"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `user_profiles` (`user_id`, `age`, `sex`, `secondary_email`, `secondary_phone_number`, `attachment`, `created_at`, `updated_at`) VALUES (3, 29, 'Male', '', '', 'ganesh1.jpeg', '2016-05-08 15:28:26', '2016-05-08 15:28:26')
+  [1m[36m (97.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 98.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:26 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:32 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:34 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:36 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:36 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.1ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:37 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:38 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.1ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:39 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:40 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2016-05-08 20:58:44 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"612hSqldKhoWuhZVs080ffPNN5y8kIvkFa97GBBzjWb+V6n3T4vEIhhDwoz6uURHwJwFyqcdtDycJCZlveZylg=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:44 +0530
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:58:44 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.6ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:58:50 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zGgCoPnDb3ctRaCfHTUclmw0QW2s40FS6p7FJvEvfPv49xF3W+3k7O37pyXkSDWrtzPBwTI6LAVxW3D9z6ifMA==", "user"=>{"email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'santa.jyp@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 149ms (ActiveRecord: 0.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zGgCoPnDb3ctRaCfHTUclmw0QW2s40FS6p7FJvEvfPv49xF3W+3k7O37pyXkSDWrtzPBwTI6LAVxW3D9z6ifMA==", "user"=>{"email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-05-08 20:58:57 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lc6qGIF1U5FDOswQEJOcxen7LujfQj+dyhiyQ3+NEkahUbnPI1vYCoOEy6rp7rX4MvyuREGbUspR3QeYQQrxjQ==", "user"=>{"email"=>"santa.jyp@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'santa.jyp@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE `users` SET `remember_created_at` = '2016-05-08 15:28:58', `updated_at` = '2016-05-08 15:28:58' WHERE `users`.`id` = 3
+  [1m[36m (112.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE `users` SET `current_sign_in_at` = '2016-05-08 15:28:58', `sign_in_count` = 2, `updated_at` = '2016-05-08 15:28:58' WHERE `users`.`id` = 3[0m
+  [1m[35m (46.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 331ms (ActiveRecord: 160.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 20:58:58 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.4ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_header.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:10 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:07:35 +0530
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:09:37 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/new.html.erb within layouts/application (2.1ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 29.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.4ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 44ms (Views: 35.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:11:53 +0530
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:12:00 +0530
+
+AbstractController::ActionNotFound (The action 'edit' could not be found for UserProfileController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.5ms)
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:12:00 +0530
+
+AbstractController::ActionNotFound (The action 'edit' could not be found for UserProfileController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.3ms)
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (2.4ms)
+  Rendered user_profile/edit.html.erb within layouts/application (3.3ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 27.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:16:01 +0530
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:18:02 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.9ms)
+  Rendered user_profile/edit.html.erb within layouts/application (2.4ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:18:03 +0530
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:18:40 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (170823.7ms)
+  Rendered user_profile/edit.html.erb within layouts/application (170824.4ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 170851ms (Views: 170847.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:21:31 +0530
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (2.8ms)
+  Rendered user_profile/edit.html.erb within layouts/application (3.7ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 33.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:08 +0530
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.6ms)
+  Rendered user_profile/edit.html.erb within layouts/application (2.1ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:22:13 +0530
+
+
+Started PATCH "/user_profile" for 127.0.0.1 at 2016-05-08 21:22:26 +0530
+
+ActionController::RoutingError (No route matches [PATCH] "/user_profile"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.5ms)
+
+
+Started PATCH "/user_profile" for 127.0.0.1 at 2016-05-08 21:23:50 +0530
+
+ActionController::RoutingError (No route matches [PATCH] "/user_profile"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/jyoti/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.5ms)
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (2.1ms)
+  Rendered user_profile/edit.html.erb within layouts/application (2.6ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 27.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:23:57 +0530
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:25:07 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (3.9ms)
+  Rendered user_profile/edit.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (No route matches {:action=>"put", :controller=>"user_profile", :id=>"1"}):
+    1: <%= form_for @user_profile,:url => {:action => @user_profile.id.present? ? "put" : "create" } do |f| %>
+    2: 
+    3:     <div class="field">
+    4:       <%= f.hidden_field :user_id,:value => current_user.id %>
+  app/views/user_profile/_form.html.erb:1:in `_app_views_user_profile__form_html_erb__2085505732804763006_70225395323880'
+  app/views/user_profile/edit.html.erb:3:in `_app_views_user_profile_edit_html_erb___1512371823959325872_70225376786100'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.7ms)
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:25:24 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.7ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (5.5ms)
+  Rendered user_profile/edit.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (No route matches {:action=>"POST", :controller=>"user_profile", :id=>"1"}):
+    1: <%= form_for @user_profile,:url => {:action => @user_profile.id.present? ? "POST" : "create" } do |f| %>
+    2: 
+    3:     <div class="field">
+    4:       <%= f.hidden_field :user_id,:value => current_user.id %>
+  app/views/user_profile/_form.html.erb:1:in `_app_views_user_profile__form_html_erb__2085505732804763006_70225383563580'
+  app/views/user_profile/edit.html.erb:3:in `_app_views_user_profile_edit_html_erb___1512371823959325872_70225376786100'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.5ms)
+
+
+Started GET "/user_profile/1/edit" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.1ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (4.4ms)
+  Rendered user_profile/edit.html.erb within layouts/application (6.3ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:25:37 +0530
+
+
+Started PATCH "/user_profile/1" for 127.0.0.1 at 2016-05-08 21:25:40 +0530
+Processing by UserProfileController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlrsYMPzLC1kc81XlzBr2n31JQ2UCkj5cCTUNu/rqpY07DGmf6sE0jSDnb8kppgTtBJWsL7CiWAEQT+CpEOJyw==", "user_profile"=>{"user_id"=>"3", "age"=>"29", "sex"=>"Male", "secondary_email"=>"", "secondary_phone_number"=>""}, "commit"=>"UPDATE", "id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `update_attributes' for nil:NilClass):
+  app/controllers/user_profile_controller.rb:30:in `update'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.8ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.3ms)
+
+
+Started PATCH "/user_profile/1" for 127.0.0.1 at 2016-05-08 21:28:28 +0530
+Processing by UserProfileController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlrsYMPzLC1kc81XlzBr2n31JQ2UCkj5cCTUNu/rqpY07DGmf6sE0jSDnb8kppgTtBJWsL7CiWAEQT+CpEOJyw==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fbd3f6eb168 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-29034-t0gdy8.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"29", "sex"=>"Male", "secondary_email"=>"DR@ghi.cok", "secondary_phone_number"=>""}, "commit"=>"UPDATE", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.4ms)
+
+NoMethodError (undefined method `resize_to_fit' for #<AttachmentUploader::Uploader70225399428060:0x007fbd3f6bdda8>):
+  app/controllers/user_profile_controller.rb:28:in `update'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.6ms)
+
+
+Started PATCH "/user_profile/1" for 127.0.0.1 at 2016-05-08 21:30:25 +0530
+Processing by UserProfileController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlrsYMPzLC1kc81XlzBr2n31JQ2UCkj5cCTUNu/rqpY07DGmf6sE0jSDnb8kppgTtBJWsL7CiWAEQT+CpEOJyw==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x007fbd3e31fda0 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-29034-nr0635.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"29", "sex"=>"Male", "secondary_email"=>"DR@ghi.cok", "secondary_phone_number"=>""}, "commit"=>"UPDATE", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.1ms)
+
+NoMethodError (undefined method `scale' for #<AttachmentUploader:0x007fbd3e8265d8>):
+  app/controllers/user_profile_controller.rb:28:in `update'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.4ms)
+
+
+Started PATCH "/user_profile/1" for 127.0.0.1 at 2016-05-08 21:32:11 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserProfileController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlrsYMPzLC1kc81XlzBr2n31JQ2UCkj5cCTUNu/rqpY07DGmf6sE0jSDnb8kppgTtBJWsL7CiWAEQT+CpEOJyw==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000003751310 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-30444-t2iv3q.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"29", "sex"=>"Male", "secondary_email"=>"DR@ghi.cok", "secondary_phone_number"=>""}, "commit"=>"UPDATE", "id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.5ms)
+
+LoadError (cannot load such file -- RMagick):
+  app/uploaders/attachment_uploader.rb:6:in `include'
+  app/uploaders/attachment_uploader.rb:6:in `<class:AttachmentUploader>'
+  app/uploaders/attachment_uploader.rb:3:in `<top (required)>'
+  app/models/user_profile.rb:3:in `<class:UserProfile>'
+  app/models/user_profile.rb:1:in `<top (required)>'
+  app/controllers/user_profile_controller.rb:40:in `populate_user_profile'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.1ms)
+
+
+Started PATCH "/user_profile/1" for 127.0.0.1 at 2016-05-08 21:34:04 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UserProfileController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlrsYMPzLC1kc81XlzBr2n31JQ2UCkj5cCTUNu/rqpY07DGmf6sE0jSDnb8kppgTtBJWsL7CiWAEQT+CpEOJyw==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00000002164958 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-31536-1oyb51j.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"29", "sex"=>"Male", "secondary_email"=>"DR@ghi.cok", "secondary_phone_number"=>""}, "commit"=>"UPDATE", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.0ms)
+
+LoadError (cannot load such file -- mini_magick (You may need to install the mini_magick gem)):
+  app/uploaders/attachment_uploader.rb:7:in `include'
+  app/uploaders/attachment_uploader.rb:7:in `<class:AttachmentUploader>'
+  app/uploaders/attachment_uploader.rb:3:in `<top (required)>'
+  app/models/user_profile.rb:3:in `<class:UserProfile>'
+  app/models/user_profile.rb:1:in `<top (required)>'
+  app/controllers/user_profile_controller.rb:40:in `populate_user_profile'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.1ms)
+
+
+Started PATCH "/user_profile/1" for 127.0.0.1 at 2016-05-08 21:34:36 +0530
+Processing by UserProfileController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SlrsYMPzLC1kc81XlzBr2n31JQ2UCkj5cCTUNu/rqpY07DGmf6sE0jSDnb8kppgTtBJWsL7CiWAEQT+CpEOJyw==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x007f8e9d2788b8 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-31536-1pal6mk.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"29", "sex"=>"Male", "secondary_email"=>"DR@ghi.cok", "secondary_phone_number"=>""}, "commit"=>"UPDATE", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (1.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `user_profiles` SET `secondary_email` = 'DR@ghi.cok', `attachment` = 'ganesh1.jpeg', `updated_at` = '2016-05-08 16:04:36' WHERE `user_profiles`.`id` = 1[0m
+  [1m[35m (77.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 250ms (ActiveRecord: 81.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:34:36 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 246ms (Views: 242.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:34:37 +0530
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.7ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.6ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (2.4ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `user_profiles`[0m
+  [1m[35mUserProfile Load (0.6ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.5ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (1.1ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.6ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles`  ORDER BY `user_profiles`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.5ms)[0m  SELECT `user_profiles`.* FROM `user_profiles`
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `user_profiles` WHERE `user_profiles`.`id` = 1
+  [1m[36m (61.8ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:39:56 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:39:56 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (8.6ms)
+  Rendered user_profile/new.html.erb within layouts/application (10.1ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (2.6ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"user_profile", :id=>nil} missing required keys: [:id]):
+    2:   <% if user_signed_in? %>
+    3:       <li><%= link_to "Home",root_path %></li>
+    4:       <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+    5:       <li><%= link_to "Profile Setting", edit_user_profile_path(current_user.user_profile) %></li>
+    6: <% else %>
+    7:       <li><%= link_to "Sign in", new_user_session_path %></li>
+    8:       <li><%= link_to "Sign up", new_user_registration_path %></li>
+  app/views/shared/_header.html.erb:5:in `_app_views_shared__header_html_erb__2476531867767754614_70125245375420'
+  app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___4133086299734331889_70125250865400'
+
+
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/jyoti/.rvm/gems/ruby-2.3.0@stweet/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:00 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:00 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.5ms)
+  Rendered user_profile/new.html.erb within layouts/application (2.1ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:03 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:03 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (2.5ms)
+  Rendered user_profile/new.html.erb within layouts/application (3.8ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:05 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.1ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:05 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.0ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.5ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:06 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:06 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.5ms)
+  Rendered user_profile/new.html.erb within layouts/application (2.2ms)
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:07 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:07 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.1ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.8ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:08 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (1.0ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:08 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.0ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.7ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:11 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:11 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.3ms)
+  Rendered user_profile/new.html.erb within layouts/application (2.1ms)
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:13 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:13 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.2ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.9ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:14 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:14 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (0.9ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.5ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:16 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:16 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (0.8ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.4ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:41:18 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+Redirected to http://localhost:3000/user_profile/new
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:18 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.1ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.7ms)
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user_profile/new" for 127.0.0.1 at 2016-05-08 21:41:23 +0530
+Processing by UserProfileController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (0.8ms)
+  Rendered user_profile/new.html.erb within layouts/application (1.3ms)
+  [1m[35mUserProfile Load (0.2ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/user_profile" for 127.0.0.1 at 2016-05-08 21:43:57 +0530
+Processing by UserProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GceELsmmYNoAZxWF7Q4WpHVtH8H7lbldpswYgw4AHv5ncVnodf5IJVCXRW1emOVtvIpsfNFdeMTSqfM3Rag9ow==", "user_profile"=>{"user_id"=>"3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000000300a728 @tempfile=#<Tempfile:/tmp/RackMultipart20160508-31536-yoxeub.jpeg>, @original_filename="ganesh1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user_profile[attachment]\"; filename=\"ganesh1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "age"=>"32", "sex"=>"Male", "secondary_email"=>"DR@ghi.cok", "secondary_phone_number"=>""}, "commit"=>"UPDATE"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUserProfile Load (0.3ms)[0m  SELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `user_profiles` (`user_id`, `age`, `sex`, `secondary_email`, `secondary_phone_number`, `attachment`, `created_at`, `updated_at`) VALUES (3, 32, 'Male', 'DR@ghi.cok', '', 'ganesh1.jpeg', '2016-05-08 16:13:57', '2016-05-08 16:13:57')
+  [1m[36m (79.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 134ms (ActiveRecord: 80.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:43:57 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user_profile/2/edit" for 127.0.0.1 at 2016-05-08 21:44:11 +0530
+Processing by UserProfileController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered user_profile/_form.html.erb (1.0ms)
+  Rendered user_profile/edit.html.erb within layouts/application (1.9ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:44:15 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.2ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_header.html.erb (0.3ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUserProfile Load (0.3ms)[0m  [1mSELECT  `user_profiles`.* FROM `user_profiles` WHERE `user_profiles`.`user_id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_header.html.erb (0.4ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap.self-258e599e2c1cb38fe775002bd045c299a2ab8270eb73c845e3b2c0d53f5df21d.css?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/user_profile.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/user_profile.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-05-08 21:46:12 +0530
