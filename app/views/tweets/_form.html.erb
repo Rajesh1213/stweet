@@ -1,4 +1,4 @@
-<%= form_for @tweet,:url => {:controller=> "tweets",:action => "create" },remote: true do |f| %>
+<%= form_for current_user.tweets.new,:url => {:controller=> "tweets",:action => "create" },remote: true do |f| %>
     <div class="field">
       <label></label><br />
       <%= f.text_area :body%>

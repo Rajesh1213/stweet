@@ -13,8 +13,12 @@
       <% end %>
     </div>
     <div class="col-lg-8">
+
       <%= render :partial => "tweets/form"%>
-      <% %>
+      <% binding.pry %>
+      <div class="row">
+        <%= render @tweets %>
+      </div>
     </div>
     <div class="col-lg-2">
 
