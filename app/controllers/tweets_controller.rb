@@ -12,6 +12,13 @@ class TweetsController < ApplicationController
     end
   end
 
+  def destroy
+    @tweet = current_user.tweets.find(params[:id])
+    if @tweet.destroy
+      @success = true
+    end
+  end
+
   private
 
   def tweet_params

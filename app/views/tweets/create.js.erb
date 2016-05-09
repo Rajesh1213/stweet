@@ -4,4 +4,5 @@ console.log("<%= @errors.join(",") %>");
 console.log("Saved Tweet : <%= @tweet.body %>");
 $("#new_tweet")[0].reset();
 $("#tweet_list").prepend("<%=escape_javascript(render :partial => "tweets/tweet", :locals => {:tweet => @tweet})%>");
+$(".tweet_count").html("<%= current_user.tweets.try(:count) %> Tweets");
 <% end %>

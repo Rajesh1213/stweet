@@ -1,0 +1,3 @@
+$("#tweet_list").find(".<%= "tweet_#{@tweet.id}"%>").remove();
+$(".tweet_count").html("<%= current_user.tweets.try(:count) %> Tweets");
+

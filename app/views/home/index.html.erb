@@ -3,7 +3,8 @@
     <div class="col-lg-2">
       <% if user_signed_in? %>
           <h5><%= current_user.name %>!</h5>
-          <%= image_tag @user_profile.try(:attachment).try(:thumb) ,:class => "img-thumbnail"%>
+          <%= image_tag @user_profile.try(:attachment).try(:thumb) ,:class => "img-thumbnail"%></br>
+          <p style="margin-top:8px;"class="tweet_count"><%= @tweets.try(:count)%> Tweets</p>
       <% else %>
           <h6>Welcome, new user!</h6>
           <p class="lead">
