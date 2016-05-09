@@ -15,9 +15,16 @@
     <div class="col-lg-8">
 
       <%= render :partial => "tweets/form"%>
-      <% binding.pry %>
+      <div style="height:20px;"></div>
+      <div class="clearfix"></div>
       <div class="row">
-        <%= render @tweets %>
+        <div class="panel">
+          <div class="panel-heading"></div>
+          <div class="panel-body">
+            <ul class="list-group" id="tweet_list">
+            <%= render @tweets %></div>
+            </ul>
+        </div>
       </div>
     </div>
     <div class="col-lg-2">

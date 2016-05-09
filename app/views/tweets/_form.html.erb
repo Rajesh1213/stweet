@@ -1,10 +1,15 @@
-<%= form_for current_user.tweets.new,:url => {:controller=> "tweets",:action => "create" },remote: true do |f| %>
-    <div class="field">
-      <label></label><br />
-      <%= f.text_area :body%>
-    </div>
 
-    <div class="actions">
-      <%= f.submit "TWEET",:class => "btn btn-success"%>
+<%= form_for @tweet,:url => {:controller=> "tweets",:action => "create" },remote: true ,:class => "form-inline" do |f| %>
+    <div class="form-group">
+      <%= f.text_area :body,
+                      :rows => 2,
+                      :cols => 60 ,
+                      :maxlength => 50,
+                      :minlength=> 5,
+                      :autocomplete => :off,
+                      :class => "form-control"%>
+    </div>
+    <div class="form-group">
+      <%= f.submit "TWEET",:class => "btn btn-success pull-right"%>
     </div>
 <% end %>
