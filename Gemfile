@@ -26,6 +26,8 @@ gem 'bootstrap-sass', '3.2.0.0'
 gem 'devise', '~> 4.1.0'
 gem 'carrierwave', '~> 0.9'
 gem "rmagick", "~> 2.13.1"
+gem 'rails4-autocomplete'
+gem 'jquery-ui-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

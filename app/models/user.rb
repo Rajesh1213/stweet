@@ -8,11 +8,17 @@ class User < ActiveRecord::Base
   has_many :tweets, :through => :user_tweets
   has_many :user_tweets
 
-
+  # Code to access current_user in Model
   def self.current
     Thread.current[:user]
   end
+
   def self.current=(user)
     Thread.current[:user] = user
+  end
+
+  def self.search(search)
+    where("name LIKE ?", "%#{search}%")
+    where("email LIKE ?", "%#{search}%")
   end
 end

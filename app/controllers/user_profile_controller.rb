@@ -10,7 +10,7 @@ class UserProfileController < ApplicationController
   end
 
   def create
-      @user_profile = current_user.user_profile.new(user_profile_params)
+      @user_profile = current_user.build_user_profile(user_profile_params)
       @user_profile.save
       redirect_to root_path
   end

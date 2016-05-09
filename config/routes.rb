@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users do
+   post :search, :on => :collection
+   get :autocomplete_user_name, :on => :collection
+  end
   resources :user_profile
   resources :tweets
 
