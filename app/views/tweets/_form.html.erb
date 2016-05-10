@@ -1,5 +1,7 @@
-
 <%= form_for @tweet,:url => {:controller=> "tweets",:action => "create" },remote: true ,:class => "form-inline" do |f| %>
+    <div id='tweet_err_info'>
+      <ul></ul>
+    </div>
     <div class="form-group">
       <%= f.text_area :body,
                       :rows => 2,
