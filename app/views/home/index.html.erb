@@ -2,6 +2,7 @@
   <div class="col-lg-12">
     <div class="col-lg-2" style="margin-top:30px;">
       <% if user_signed_in? %>
+          <h5><%= current_user.name %>!</h5>
           <div class="row">
             <div class="col-md-5">
               <% if current_user.user_profile.present?%>
@@ -9,9 +10,6 @@
               <% else %>
                   <%=  image_tag 'thumb_profile.jpg'%>
               <% end %>
-            </div>
-            <div class="col-md-5" style="margin-top:35px;">
-              <h5><%= current_user.name %>!</h5>
             </div>
           </div>
           <p style="margin-top:8px;"class="tweet_count"><%= @tweets.try(:count)%> Tweets</p>
