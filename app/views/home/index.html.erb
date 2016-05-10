@@ -1,13 +1,19 @@
 <div class="row">
   <div class="col-lg-12">
-    <div class="col-lg-2">
+    <div class="col-lg-2" style="margin-top:30px;">
       <% if user_signed_in? %>
-          <h5><%= current_user.name %>!</h5>
-          <% if current_user.user_profile.present?%>
-              <%= current_user.user_profile.attachment? ? (image_tag current_user.user_profile.try(:attachment).try(:thumb)) : (image_tag 'thumb_profile.jpg') %>
-          <% else %>
-              <%=  image_tag 'thumb_profile.jpg'%>
-          <% end %>
+          <div class="row">
+            <div class="col-md-5">
+              <% if current_user.user_profile.present?%>
+                  <%= current_user.user_profile.attachment? ? (image_tag current_user.user_profile.try(:attachment).try(:thumb)) : (image_tag 'thumb_profile.jpg') %>
+              <% else %>
+                  <%=  image_tag 'thumb_profile.jpg'%>
+              <% end %>
+            </div>
+            <div class="col-md-5" style="margin-top:35px;">
+              <h5><%= current_user.name %>!</h5>
+            </div>
+          </div>
           <p style="margin-top:8px;"class="tweet_count"><%= @tweets.try(:count)%> Tweets</p>
       <% else %>
           <h6>Welcome, new user!</h6>
@@ -19,15 +25,11 @@
     </div>
     <div class="col-lg-8">
       <%= render :partial => "tweets/form"%>
-      <div style="height:20px;"></div>
-      <div class="clearfix"></div>
       <div class="row">
-        <div class="panel">
-          <div class="panel-heading"></div>
-          <div class="panel-body">
-            <ul class="list-group" id="tweet_list">
-            <%= render @tweets %></div>
-            </ul>
+        <div class="panel-body" style="margin-top:30px;">
+          <ul class="list-group" id="tweet_list">
+            <%= render @tweets %>
+          </ul>
         </div>
       </div>
     </div>
