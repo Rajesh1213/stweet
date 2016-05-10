@@ -3,12 +3,12 @@
   <h2>Log in</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name),class: "form-inline" )do |f| %>
-      <div class="form-group col-lg-5">
+      <div class="form-group col-lg-4">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control",placeholder: "Email" %>
       </div>
 
-      <div class="form-group col-lg-5">
+      <div class="form-group col-lg-4">
         <%= f.label :password %><br />
         <%= f.password_field :password, autocomplete: "off",class: "form-control", placeholder: "Password" %>
       </div>
