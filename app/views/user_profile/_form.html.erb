@@ -3,10 +3,12 @@
       <div class="form-group">
         <%= f.hidden_field :user_id,:value => current_user.id %>
       </div>
-
       <div class="form-group">
         <label>Upload Photo</label>
-        <%= f.file_field :attachment %>
+        <p id="user_profile_show_file_input" ><%= f.file_field :attachment,:onclick=> "compute_file();"%></p>
+        <% if @user_profile.attachment? %>
+            <p id="user_profile_attachment_file" style="margin-top:-32px;margin-left:200px;"><%= @user_profile.attachment.file.filename %>
+        <% end %>
       </div>
 
       <div class="form-group">
@@ -16,7 +18,7 @@
 
       <div class="form-group">
         <label>Gender</label>
-        <%= f.select :sex ,options_for_select([["Select", ""], ["Male", "Male"],["Female", "Female"]],selected: @user_profile.sex),class: "form-control" %>
+        <%= f.select(:sex, options_for_select([["Select", ""], ["Male", "Male"],["Female", "Female"]],selected: @user_profile.sex),{}, {class: "form-control",:style=>"width:10%"}) %>
       </div>
 
       <div class="form-group">

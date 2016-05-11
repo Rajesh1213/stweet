@@ -17,3 +17,9 @@
 //= require jquery-ui/autocomplete
 //= require autocomplete-rails
 //= require_tree .
+
+
+function compute_file(){
+    $("#user_profile_attachment_file").hide();
+    $("#user_profile_show_file_input").show();
+}
