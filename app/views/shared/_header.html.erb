@@ -1,12 +1,12 @@
-<ul class="nav nav-pills pull-right">
+<ul class="nav nav-pills pull-right" style="margin-right:60px;">
   <% if user_signed_in? %>
       <li><%= link_to "Home",root_path %></li>
       <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
       <li><%= link_to "Profile Setting", current_user.user_profile.present? ? edit_user_profile_path(current_user.user_profile) : new_user_profile_path %></li>
       <li>
-        <%= form_tag search_users_path do |f| %>
-            <%= autocomplete_field_tag 'user','' ,autocomplete_user_name_users_path %>
-            <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+        <%= form_tag search_path, :method=> :get do %>
+            <%= text_field_tag :q, nil, :class => "form-control"%>
+            <%= button_tag(type: 'submit', class: "btn btn-primary",:style=>"float:right;margin-top:-35px;margin-right:-50px;") do %>
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
             <% end %>
         <% end %>

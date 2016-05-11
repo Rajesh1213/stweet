@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users do
-   post :search, :on => :collection
-   get :autocomplete_user_name, :on => :collection
-  end
+  resources :users
   resources :user_profile
   resources :tweets
 
@@ -12,7 +9,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-
+  match 'search' => 'home#search', :as => :search, via: :get
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

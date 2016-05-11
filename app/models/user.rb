@@ -16,9 +16,4 @@ class User < ActiveRecord::Base
   def self.current=(user)
     Thread.current[:user] = user
   end
-
-  def self.search(search)
-    where("name LIKE ?", "%#{search}%")
-    where("email LIKE ?", "%#{search}%")
-  end
 end

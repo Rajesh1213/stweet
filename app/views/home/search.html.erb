@@ -1,0 +1,14 @@
+<h4>List of Users</h4>
+<table class="table table-striped" style="width:50%">
+  <tr>
+    <th>User Name</th>
+    <th>User Email</th>
+  </tr>
+
+  <% @users.each do |user|%>
+      <tr>
+        <td> <%= link_to user.name, user_path(user),:id=>user.id %><br></td>
+        <td> <%= link_to user.email, user_path(user),:id=>user.id %><br></td>
+      </tr>
+  <% end %>
+</table>

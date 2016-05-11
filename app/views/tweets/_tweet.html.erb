@@ -1,3 +1,8 @@
-<li class="list-group-item <%= "tweet_#{tweet.id}"%>"><%= link_to tweet_path(tweet), method: :delete, id: tweet.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right" do %>
-    <i class="glyphicon glyphicon-trash"></i>
-<% end %> <%= tweet.body %></li>
+<li class="list-group-item <%= "tweet_#{tweet.id}"%>">
+  <% unless @user %>
+      <%= link_to tweet_path(tweet), method: :delete, id: tweet.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right" do %>
+          <i class="glyphicon glyphicon-trash"></i>
+      <% end %>
+  <% end %>
+  <%= tweet.body %>
+</li>
