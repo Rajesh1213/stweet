@@ -16,7 +16,7 @@ User Profile
     </div>
     <div class="col-lg-8">
       <div class="row">
-        <div class="panel-body" style="margin-top:30px;">
+        <div class="panel-body">
           <h4>Tweet List</h4>
           <ul class="list-group" id="tweet_list">
             <%= render @user.tweets.order("updated_at desc") %>
