@@ -18,9 +18,13 @@ User Profile
       <div class="row">
         <div class="panel-body">
           <h4>Tweet List</h4>
-          <ul class="list-group" id="tweet_list">
-            <%= render @user.tweets.order("updated_at desc") %>
-          </ul>
+          <% if @user.tweets.present? %>
+              <ul class="list-group" id="tweet_list">
+                <%= render @user.tweets.order("updated_at desc") %>
+              </ul>
+          <% else %>
+              <p class="list-group-item-success" style="width:50%">Currently No Tweets is Present.</p>
+          <% end %>
         </div>
       </div>
     </div>
