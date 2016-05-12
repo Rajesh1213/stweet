@@ -4,5 +4,6 @@
           <i class="glyphicon glyphicon-trash"></i>
       <% end %>
   <% end %>
-  <%= tweet.body %>
+  <%= tweet.body %><br>
+  <%="#{time_ago_in_words(tweet.created_at)} ago"%>
 </li>

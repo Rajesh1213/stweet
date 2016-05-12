@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
   has_many :tweets, :through => :user_tweets
   has_many :user_tweets
 
+  acts_as_followable
+  acts_as_follower
+
   extend FriendlyId
   friendly_id :name
 

@@ -29,6 +29,7 @@ gem "rmagick", "~> 2.13.1"
 gem 'jquery-ui-rails'
 gem 'ransack', '~> 1.7'
 gem 'friendly_id', '~> 5.1'
+gem 'acts_as_follower', '~> 0.2.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
