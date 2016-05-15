@@ -1,0 +1,9 @@
+<% if current_user.following?(@user) %>
+$("#follow_status").html("<%= escape_javascript(unfollow_link) %>");
+$("#followers_count").html("Followers <%= @user.followers_count %>");
+$("#following_count").html("Following <%= @user.follow_count %>");
+<% else %>
+$("#follow_status").html("<%= escape_javascript(follow_link) %>");
+$("#followers_count").html("Followers <%= @user.followers_count %>");
+$("#following_count").html("Following <%= @user.follow_count %>");
+<% end %>

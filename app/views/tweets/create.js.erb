@@ -2,12 +2,12 @@
 console.log("<%= @errors.join(",") %>");
 <% @errors.each do |error| %>
 var error = "<%= error%>";
-$('#tweet_err_info ul').append('<li style="color:red;">'+error+'</li>');
+$('#tweet_err_info ul').html('<li style="color:red;">'+error+'</li>');
 <% end %>
 <% else %>
 console.log("Saved Tweet : <%= @tweet.body %>");
 $("#new_tweet")[0].reset();
 $("#tweet_list").prepend("<%=escape_javascript(render :partial => "tweets/tweet", :locals => {:tweet => @tweet})%>");
 $(".tweet_count").html("<%= current_user.tweets.try(:count) %> Tweets");
-$('#tweet_err_info ul').remove();
+$('#tweet_err_info ul li').remove();
 <% end %>

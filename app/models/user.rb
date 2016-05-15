@@ -14,6 +14,11 @@ class User < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name
 
+  def all_tweets
+    #UserTweet.joins(:user).where("user_tweets.user_id in (?)" , self.all_following << self).order("updated_at desc").map(&:tweet)
+    UserTweet.joins(:user).where("user_tweets.user_id in (?)" , self.all_following << self).order("updated_at desc")
+  end
+
   # Code to access current_user in Model
   def self.current
     Thread.current[:user]

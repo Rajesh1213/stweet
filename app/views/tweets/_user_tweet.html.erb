@@ -1,0 +1,9 @@
+<li class="list-group-item <%= "tweet_#{user_tweet.tweet.id}"%>">
+  <% unless @user %>
+      <%= link_to tweet_path(user_tweet.tweet), method: :delete, id: user_tweet.tweet.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right" do %>
+          <i class="glyphicon glyphicon-trash"></i>
+      <% end if current_user.id == user_tweet.user.id%>
+  <% end %>
+  <%= user_tweet.tweet.body %><br>
+  <%="#{time_ago_in_words(user_tweet.tweet.created_at)} ago by #{user_tweet.user.name}"%>
+</li>

@@ -13,11 +13,13 @@ User Profile
         </div>
       </div>
       <p style="margin-top:8px;"class="tweet_count"><%= @user.tweets.try(:count)%> Tweets</p>
-      <% if current_user.following?(@user) %>
-          <%= link_to "Unfollow", unfollow_user_path(@user.id), remote: true,  class: "btn btn-info",:id=>"unfollow_user"%>
-      <% else %>
-          <%= link_to "Follow", follow_user_path(@user.id), remote: true,  class: "btn btn-info",:id=>"follow_user"%>
-      <% end %>
+      <div id="follow_status">
+        <% if current_user.following?(@user) %>
+            <%= unfollow_link %>
+        <% else %>
+            <%= follow_link %>
+        <% end %>
+      </div>
     </div>
     <div class="col-lg-8">
       <div class="row">
@@ -35,8 +37,8 @@ User Profile
     </div>
     <div class="col-lg-2">
       <ul class="list-group">
-        <li class="list-group-item list-group-item-success">Following <%= @user.follow_count %></li>
-        <li class="list-group-item list-group-item-info">Followers <%= @user.followers_count %></li>
+        <li class="list-group-item list-group-item-success" id="following_count">Following <%= @user.follow_count %></li>
+        <li class="list-group-item list-group-item-info" id="followers_count" >Followers <%= @user.followers_count %></li>
         <li class="list-group-item list-group-item-warning">User C Followed You</li>
         <li class="list-group-item list-group-item-danger">User D Retweeted</li>
       </ul>
