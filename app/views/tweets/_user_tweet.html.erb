@@ -5,5 +5,5 @@
       <% end if current_user.id == user_tweet.user.id%>
   <% end %>
   <%= user_tweet.tweet.body %><br>
-  <%="#{time_ago_in_words(user_tweet.tweet.created_at)} ago by #{user_tweet.user.name}"%>
+  <%="#{time_ago_in_words(user_tweet.tweet.created_at)} ago by "%> <%= link_to user_tweet.user == current_user ? "You" : user_tweet.user.name , user_path(user_tweet.user)%>
 </li>

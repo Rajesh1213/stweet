@@ -12,7 +12,7 @@
               <% end %>
             </div>
           </div>
-          <p style="margin-top:8px;"class="tweet_count"><%= @tweets.try(:count)%> Tweets</p>
+          <p style="margin-top:8px;"class="tweet_count"><%= current_user.tweets.try(:count)%> Tweets</p>
       <% else %>
           <h6>Welcome, new user!</h6>
           <p class="lead">
