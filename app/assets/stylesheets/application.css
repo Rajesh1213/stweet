@@ -14,3 +14,19 @@
  *= require_tree .
  *= require_self
  */
+
+.footer{
+    height:50px;
+    background-color: #428bca;;
+}
+
+.footer-list{
+    color: white;
+    text-align:center;
+    padding-top: 15px;
+}
+
+.profile{
+    padding-left:100px;
+    height: 532px;
+}
