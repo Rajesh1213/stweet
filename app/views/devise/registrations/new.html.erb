@@ -7,13 +7,13 @@
 
     <div class="form-group ">
       <%= f.label :name %><br />
-      <%= f.text_field :name,:class=> "form-control",:style=>"width:40%" %>
+      <%= f.text_field :name,:class=> "form-control",:style=>"width:40%",:placeholder=>"Name" %>
     </div>
 
 
     <div class="form-group">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true ,:class=> "form-control",:style=>"width:40%"%>
+    <%= f.email_field :email, autofocus: true ,:class=> "form-control",:style=>"width:40%",:placeholder=>"Email" %>
   </div>
 
   <div class="form-group">
@@ -21,17 +21,17 @@
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off",:class=> "form-control" ,:style=>"width:40%"%>
+    <%= f.password_field :password, autocomplete: "off",:class=> "form-control" ,:style=>"width:40%",:placeholder=>"Password" %>
   </div>
 
   <div class="form-group">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off",:class=> "form-control",:style=>"width:40%" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off",:class=> "form-control",:style=>"width:40%",:placeholder=>"Password Confirmation" %>
   </div>
 
     <div class="form-group  ">
       <%= f.label :phone_number %><br />
-      <%= f.text_field :phone_number,:class=> "form-control",:style=>"width:40%" %>
+      <%= f.text_field :phone_number,:class=> "form-control",:style=>"width:40%" ,:placeholder=>"Phone Number"%>
     </div></br>
 
     <div class="form-group">

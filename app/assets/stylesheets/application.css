@@ -17,7 +17,8 @@
 
 .footer{
     height:50px;
-    background-color: #428bca;;
+    background-color: #428bca;
+    margin-top: 40px;
 }
 
 .footer-list{
@@ -29,4 +30,19 @@
 .profile{
     padding-left:100px;
     height: 532px;
+}
+
+.notification{
+    background: #cb1b2c;
+    padding:1px 2px;
+    position:absolute;
+    margin:-4px 0 0 25px;
+    border-radius:3px
+
+}
+.notification a{ color:#FFFFFF; padding:0!important}
+.notification a:hover{ color:#FFFFFF !important;}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
 }

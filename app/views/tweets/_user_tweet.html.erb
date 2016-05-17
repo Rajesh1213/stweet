@@ -4,6 +4,11 @@
           <i class="glyphicon glyphicon-trash"></i>
       <% end if current_user.id == user_tweet.user.id%>
   <% end %>
-  <%= user_tweet.tweet.body %><br>
+  <% if user_tweet.user.user_profile.present?%>
+      <%= user_tweet.user.user_profile.attachment? ? (image_tag user_tweet.user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
+  <% else %>
+      <%=  image_tag 'thumb_profile.jpg'%>
+  <% end %>
+ <%= user_tweet.tweet.body %><br>
   <%="#{time_ago_in_words(user_tweet.tweet.created_at)} ago by "%> <%= link_to user_tweet.user == current_user ? "You" : user_tweet.user.name , user_path(user_tweet.user)%>
 </li>

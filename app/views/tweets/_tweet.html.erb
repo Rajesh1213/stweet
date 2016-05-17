@@ -4,6 +4,11 @@
           <i class="glyphicon glyphicon-trash"></i>
       <% end %>
   <% end %>
+  <% if @user.user_profile.present?%>
+      <%= @user.user_profile.attachment? ? (image_tag @user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
+  <% else %>
+      <%=  image_tag 'thumb_profile.jpg'%>
+  <% end %>
   <%= tweet.body %><br>
   <%="#{time_ago_in_words(tweet.created_at)} ago"%>
 </li>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160512055717) do
+ActiveRecord::Schema.define(version: 20160516072234) do
 
   create_table "follows", force: :cascade do |t|
     t.integer  "followable_id",   limit: 4,                   null: false
@@ -25,6 +25,15 @@ ActiveRecord::Schema.define(version: 20160512055717) do
 
   add_index "follows", ["followable_id", "followable_type"], name: "fk_followables", using: :btree
   add_index "follows", ["follower_id", "follower_type"], name: "fk_follows", using: :btree
+
+  create_table "notifications", force: :cascade do |t|
+    t.integer  "user_id",           limit: 4
+    t.integer  "notifiable_id",     limit: 4
+    t.string   "notification_type", limit: 255
+    t.boolean  "is_read"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
 
   create_table "tweets", force: :cascade do |t|
     t.text     "body",       limit: 65535
@@ -40,6 +49,10 @@ ActiveRecord::Schema.define(version: 20160512055717) do
     t.integer  "user_id",                limit: 4
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
+    t.string   "pic_file_name",          limit: 255
+    t.string   "pic_content_type",       limit: 255
+    t.integer  "pic_file_size",          limit: 4
+    t.datetime "pic_updated_at"
     t.string   "attachment",             limit: 255
   end
 
