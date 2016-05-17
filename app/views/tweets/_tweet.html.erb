@@ -4,8 +4,8 @@
           <i class="glyphicon glyphicon-trash"></i>
       <% end %>
   <% end %>
-  <% if @user.user_profile.present?%>
-      <%= @user.user_profile.attachment? ? (image_tag @user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
+  <% if current_user.user_profile.present?%>
+      <%= current_user.user_profile.attachment? ? (image_tag current_user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
   <% else %>
       <%=  image_tag 'thumb_profile.jpg'%>
   <% end %>
