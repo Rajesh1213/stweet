@@ -14,13 +14,18 @@ class TweetsController < ApplicationController
 
   def destroy
     @tweet = current_user.tweets.find(params[:id])
-    if @tweet.destroy
+    if current_user.user_tweets.where(:tweet_id => params[:id]).destroy_all
       @success = true
     end
   end
 
   def retweet
-    @status = current_user.user_tweets.new(:tweet_id => params[:id]).save
+    @user_tweet = current_user.user_tweets.find_or_initialize_by(:tweet_id => params[:id])
+    if @user_tweet.persisted?
+      @user_tweet.touch(:updated_at)
+    else
+      @user_tweet.save
+    end
   end
 
   private
