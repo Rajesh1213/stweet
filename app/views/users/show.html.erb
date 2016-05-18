@@ -27,7 +27,7 @@ User Profile
           <h4>Tweet List</h4>
           <% if @user.tweets.present? %>
               <ul class="list-group" id="tweet_list">
-                <%= render @user.tweets.order("updated_at desc") %>
+                <%= render @user.tweets.order("updated_at desc"), :locals => {:user => @user} %>
               </ul>
           <% else %>
               <p class="list-group-item-success" style="width:50%">Currently No Tweets is Present.</p>

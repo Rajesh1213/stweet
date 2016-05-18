@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
   before_action :authenticate_user!
 
   def new
-     @tweet = Tweet.new
+    @tweet = Tweet.new
   end
 
   def create
@@ -17,6 +17,10 @@ class TweetsController < ApplicationController
     if @tweet.destroy
       @success = true
     end
+  end
+
+  def retweet
+    @status = current_user.user_tweets.new(:tweet_id => params[:id]).save
   end
 
   private
