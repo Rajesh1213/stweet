@@ -8,7 +8,12 @@ class HomeController < ApplicationController
 
   def search
     q = params[:q]
-    @q = User.search(name_or_email_cont: q)
-    @users= @q.result(:distinct => true)
+    if !q.blank?
+      @q = User.search(name_or_email_cont: q)
+      @users= @q.result(:distinct => true)
+    else
+      flash[:notice] = "Enter User Name"
+      redirect_to root_path
+    end
   end
 end

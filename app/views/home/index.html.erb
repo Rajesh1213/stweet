@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-lg-12" style="margin-top:20px;">
     <div class="col-lg-2" style="margin-top:30px;">
       <% if user_signed_in? %>
           <h5><%= current_user.name %>!</h5>
@@ -33,7 +33,7 @@
     </div>
     <div class="col-lg-2">
       <ul class="list-group">
-        <li class="list-group-item list-group-item-success">Following <%= current_user.follow_count %></li>
+        <li class="list-group-item list-group-item-info">Following <%= current_user.follow_count %></li>
         <li class="list-group-item list-group-item-warning">Followers <%=  current_user.followers_count %></li>
       </ul>
     </div>

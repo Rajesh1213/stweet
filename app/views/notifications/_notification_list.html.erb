@@ -1,17 +1,20 @@
-<% if @notifications.present? %>
-    <% @notifications.each do |notification|%>
-        <li id="notification-<%= notification.id %>" class="list-group-item" style="width:60%">
-          <% if notification.user.user_profile.present?%>
-              <%= notification.user.user_profile.attachment? ? (image_tag notification.user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
-          <% else %>
-              <%=  image_tag 'thumb_profile.jpg'%>
-          <% end %>
-          <b><%= link_to notification.user.name, user_path(notification.user.id),:id => notification.user.id %></b> has Followed You.
-          <%= link_to notification_path(notification), method: :delete, id: notification.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right;" do %>
-              <i class="glyphicon glyphicon-trash"></i>
-          <% end %>
-        </li>
-    <% end %>
-<% else %>
-    <p> No Notifications is Available. </p>
-<% end %>
+<div class="noti-display">
+  <h4><b>Lists of Notifications</b></h4>
+  <% if @notifications.present? %>
+      <% @notifications.each do |notification|%>
+          <li id="notification-<%= notification.id %>" class="list-group-item" style="width:60%">
+            <% if notification.user.user_profile.present?%>
+                <%= notification.user.user_profile.attachment? ? (image_tag notification.user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
+            <% else %>
+                <%=  image_tag 'thumb_profile.jpg'%>
+            <% end %>
+            <b><%= link_to notification.user.name, user_path(notification.user.id),:id => notification.user.id %></b> has Followed You.
+            <%= link_to notification_path(notification), method: :delete, id: notification.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right;" do %>
+                <i class="glyphicon glyphicon-trash"></i>
+            <% end %>
+          </li>
+      <% end %>
+  <% else %>
+      <p> No Notifications is Available. </p>
+  <% end %>
+</div>
