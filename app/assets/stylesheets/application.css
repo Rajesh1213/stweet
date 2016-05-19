@@ -76,7 +76,12 @@
 
 a:hover,a:focus{
     color:white;
+    text-decoration: none;
 }
 .menu-list{
     margin-right:60px;margin-top:10px;
+}
+
+.footer-link{
+    color: white;
 }
