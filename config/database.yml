@@ -1,9 +1,18 @@
-development:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  host: localhost
-  database: stweet-app
+#development:
+#  adapter: mysql2
+#  encoding: utf8
+#  reconnect: false
+#  host: localhost
+#  database: stweet-app
+#  pool: 5
+#  username: root
+#  password: root
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: stweet
   pool: 5
-  username: root
-  password: root
+  host: localhost
+  username: pguser-name
+  password: pguser-name
