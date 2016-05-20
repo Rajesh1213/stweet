@@ -82,7 +82,7 @@ a:hover,a:focus{
 }
 
 .footer-link{
-    color: white;
+    color: white !important;
 }
 
 .tweet-list{
