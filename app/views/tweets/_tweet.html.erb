@@ -1,19 +1,19 @@
-<li class="list-group-item <%= "tweet_#{tweet.id}"%>">
+<li class="list-group-item tweet-height <%= "tweet_#{tweet.id}"%>">
   <% user = @user.present? ? @user : current_user %>
   <% if @user %>
       <%= link_to retweet_tweet_path(tweet),:remote => :true, :style=>"float:right" do %>
           <i class="glyphicon glyphicon-retweet"></i>
       <% end %>
-  <%else%>
+  <% else %>
       <%= link_to tweet_path(tweet), method: :delete, id: tweet.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right" do %>
           <i class="glyphicon glyphicon-trash"></i>
       <% end %>
   <% end %>
   <% if user.user_profile.present?%>
-      <%= user.user_profile.attachment? ? (image_tag user.user_profile.try(:attachment).try(:thumb),:width=>"40", :height=>"32") : (image_tag 'thumb_profile.jpg') %>
+      <%= user.user_profile.attachment? ? (image_tag user.user_profile.try(:attachment).try(:thumb),:width=>"48", :height=>"35") : (image_tag 'thumb_profile.jpg') %>
   <% else %>
       <%=  image_tag 'thumb_profile.jpg'%>
   <% end %>
-  <%= tweet.body %><br>
-  <%="#{time_ago_in_words(tweet.created_at)} ago"%>
+  <p class="tweet-list"><%= tweet.body %></p><br>
+  <p class="tweet-time"><%="#{time_ago_in_words(tweet.created_at)} ago"%></p>
 </li>

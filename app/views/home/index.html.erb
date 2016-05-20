@@ -1,25 +1,21 @@
 <div class="row">
-  <div class="col-lg-12" style="margin-top:20px;">
-    <div class="col-lg-2" style="margin-top:30px;">
-      <% if user_signed_in? %>
-          <h5><%= current_user.name %>!</h5>
-          <div class="row">
-            <div class="col-md-5">
-              <% if current_user.user_profile.present?%>
-                  <%= current_user.user_profile.attachment? ? (image_tag current_user.user_profile.try(:attachment).try(:thumb)) : (image_tag 'thumb_profile.jpg') %>
-              <% else %>
-                  <%=  image_tag 'thumb_profile.jpg'%>
-              <% end %>
+  <div class="col-lg-12" style="margin-top:50px;">
+    <div class="col-lg-2" style="margin-top:-7px">
+      <div style="margin-left:10px;">
+        <% if user_signed_in? %>
+            <h5><%= current_user.name %></h5>
+            <div class="row">
+              <div class="col-md-5">
+                <% if current_user.user_profile.present?%>
+                    <%= current_user.user_profile.attachment? ? (image_tag current_user.user_profile.try(:attachment).try(:thumb)) : (image_tag 'thumb_profile.jpg') %>
+                <% else %>
+                    <%=  image_tag 'thumb_profile.jpg'%>
+                <% end %>
+              </div>
             </div>
-          </div>
-          <p style="margin-top:8px;"class="tweet_count"><%= current_user.tweets.try(:count)%> Tweets</p>
-      <% else %>
-          <h6>Welcome, new user!</h6>
-          <p class="lead">
-            You must sign in or sign up before you can access our super stweet,
-            top secret content.
-          </p>
-      <% end %>
+            <p style="margin-top:8px;"class="tweet_count"><%= current_user.tweets.try(:count)%> Tweets</p>
+        <% end %>
+      </div>
     </div>
     <div class="col-lg-8">
       <%= render :partial => "tweets/form"%>
@@ -31,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-2">
+    <div class="col-lg-2" style="margin-top:7px">
       <ul class="list-group">
         <li class="list-group-item list-group-item-info">Following <%= current_user.follow_count %></li>
         <li class="list-group-item list-group-item-warning">Followers <%=  current_user.followers_count %></li>

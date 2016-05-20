@@ -1,3 +1,4 @@
+<h3 style="margin-left:-12px;">Update Your Profile</h3>
 <%= form_for @user_profile,:url => {:action => @user_profile.id.present? ? "update" : "create" },class: "form-horizontal",role: "form" do |f| %>
     <div class="row">
       <div class="form-group">
@@ -7,7 +8,7 @@
         <label>Upload Photo</label>
         <p id="user_profile_show_file_input" ><%= f.file_field :attachment,:onclick=> "compute_file();"%></p>
         <% if @user_profile.attachment? %>
-            <p id="user_profile_attachment_file" style="margin-top:-32px;margin-left:200px;"><%= @user_profile.attachment.file.filename %>
+            <p id="user_profile_attachment_file" class="attachment-display"><%= @user_profile.attachment.file.filename %>
         <% end %>
       </div>
 

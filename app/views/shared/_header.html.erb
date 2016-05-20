@@ -1,6 +1,6 @@
 <div class="header">
+  <%= link_to "STWEET", root_path ,:class=>"heading-title"%>
   <ul class="nav nav-pills pull-right menu-list">
-    <%= link_to "STWEET", root_path ,:class=>"heading-title"%>
       <% if user_signed_in? %>
           <li>
             <% noti_count = current_user.check_message%>

@@ -62,12 +62,12 @@
     background-color: #8FBC8F;
 }
 
-.heading-title {
-    color: white;
+.heading-title{
+    color: white !important;
     float: left;
     font-size: 25px;
-    margin-right: 446px;
-    margin-top: 5px;
+    margin-top: 14px;
+    padding-left: 86px;
 }
 
 .noti-display{
@@ -75,7 +75,6 @@
 }
 
 a:hover,a:focus{
-    color:white;
     text-decoration: none;
 }
 .menu-list{
@@ -84,4 +83,20 @@ a:hover,a:focus{
 
 .footer-link{
     color: white;
+}
+
+.tweet-list{
+    margin-left:60px;margin-top:-26px;
+}
+
+.tweet-time{
+    margin-top:-17px;
+}
+
+.tweet-height{
+    height:75px;
+}
+
+.attachment-display{
+    margin-top:-34px;margin-left:200px;
 }
