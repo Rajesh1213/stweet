@@ -22,4 +22,12 @@ class UsersController < ApplicationController
     @notification = Notification.new(:user_id => current_user.id,:notifiable_id  => @user.id)
     @notification.save
   end
+
+  def following
+    @followings = current_user.all_following
+  end
+
+  def follower
+    @followers = current_user.followers
+  end
 end
