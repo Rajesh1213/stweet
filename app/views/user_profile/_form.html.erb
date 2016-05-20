@@ -14,7 +14,7 @@
 
       <div class="form-group">
         <label>Age</label>
-        <%= f.text_field :age, :value => @user_profile.age.present? ? @user_profile.age : "",class: "form-control",:style=>"width:40%"%>
+        <%= f.text_field :age, :value => @user_profile.age.present? ? @user_profile.age : "",class: "form-control",:style=>"width:10%",:placeholder=>"Age"%>
       </div>
 
       <div class="form-group">
@@ -24,12 +24,12 @@
 
       <div class="form-group">
         <label>Secondary Email</label>
-        <%= f.text_field :secondary_email,:value => @user_profile.secondary_email.present? ? @user_profile.secondary_email : "",class: "form-control",:style=>"width:40%"%>
+        <%= f.text_field :secondary_email,:value => @user_profile.secondary_email.present? ? @user_profile.secondary_email : "",class: "form-control",:style=>"width:40%",:placeholder=>"Secondary Email"%>
       </div>
 
       <div class="form-group">
         <label>Secondary Phone Number</label>
-        <%= f.text_field :secondary_phone_number, :value => @user_profile.secondary_phone_number.present? ? @user_profile.secondary_phone_number : "",class: "form-control",:style=>"width:40%"%>
+        <%= f.text_field :secondary_phone_number, :value => @user_profile.secondary_phone_number.present? ? @user_profile.secondary_phone_number : "",class: "form-control",:style=>"width:40%",:placeholder=>"Secondary PhoneNumber"%>
       </div></br>
 
       <div class="form-group">
