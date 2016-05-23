@@ -10,4 +10,5 @@ $("#new_tweet")[0].reset();
 $("#tweet_list").prepend("<%=escape_javascript(render :partial => "tweets/tweet", :locals => {:tweet => @tweet})%>");
 $(".tweet_count").html("<%= current_user.tweets.try(:count) %> Tweets");
 $('#tweet_err_info ul li').remove();
+$('#tweetChar').remove();
 <% end %>

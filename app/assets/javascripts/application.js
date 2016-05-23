@@ -21,3 +21,14 @@ function compute_file(){
     $("#user_profile_attachment_file").hide();
     $("#user_profile_show_file_input").show();
 }
+
+function tweetcountChar(val) {
+    var max = 50;
+    var len = val.value.length;
+    if (len >= max) {
+        $('#tweetChar').text(' You have reached the limit (maximum is 50 characters))');
+    } else {
+        var char = max - len;
+        $('#tweetChar').text(char + ' characters left');
+    };
+}

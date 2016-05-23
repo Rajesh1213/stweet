@@ -10,9 +10,10 @@
                       :maxlength => 50,
                       :minlength=> 5,
                       :autocomplete => :off,
-                      :class => "form-control",:placeholder=>"What's happening?"%>
+                      :class => "form-control",:placeholder=>"What's happening?",:onkeyup => "tweetcountChar(this)"%>
     </div>
     <div class="form-group">
       <%= f.submit "TWEET",:class => "btn btn-primary pull-right"%>
     </div>
+    <div id="tweetChar"></div>
 <% end %>
