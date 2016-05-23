@@ -100,7 +100,10 @@ a:hover,a:focus{
 .attachment-display{
     margin-top:-34px;margin-left:200px;
 }
-
 #tweetChar{
     color: red;
+    position: fixed;
+}
+.export-link{
+    margin-top:28px;margin-left:20px;
 }

@@ -29,6 +29,12 @@ function tweetcountChar(val) {
         $('#tweetChar').text(' You have reached the limit (maximum is 50 characters))');
     } else {
         var char = max - len;
-        $('#tweetChar').text(char + ' characters left');
+        $('#tweetChar').text(char + ' Characters Left');
+        $('#tweet_err_info ul li').remove();
+    };
+    if (len == 0) {
+        $('#tweetChar').hide();
+    } else{
+        $('#tweetChar').show();
     };
 }

@@ -2,7 +2,6 @@ class Tweet < ActiveRecord::Base
   belongs_to :user_tweet
   validates_length_of :body, :in => 5..50, :allow_blank => false
   after_save :populate_user_tweet
-  # before_destroy :destroy_parent
 
   private
 

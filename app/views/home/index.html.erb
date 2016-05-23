@@ -32,6 +32,7 @@
         <li class="list-group-item list-group-item-info">Following <%= current_user.follow_count %></li>
         <li class="list-group-item list-group-item-warning">Followers <%=  current_user.followers_count %></li>
       </ul>
+      <%= link_to "Export Tweets", root_path(format: "csv"),:class=>"btn btn-warning export-link" %>
     </div>
   </div>
 </div>
