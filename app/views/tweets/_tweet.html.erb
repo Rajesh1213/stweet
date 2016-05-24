@@ -1,8 +1,8 @@
 <li class="list-group-item tweet-height <%= "tweet_#{tweet.id}"%>">
   <% user = @user.present? ? @user : current_user %>
   <% if @user %>
-      <%= link_to retweet_tweet_path(tweet),:remote => :true, :style=>"float:right" do %>
-          <i class="glyphicon glyphicon-retweet"></i>
+      <%= link_to retweet_tweet_path(tweet),:remote => :true, :style=>"float:right;margin-top:10px;" do %>
+          <%= image_tag 'retweet.png' %>
       <% end %>
   <% else %>
       <%= link_to tweet_path(tweet), method: :delete, id: tweet.id, data: { confirm: "Are you sure want to delete this tweet?", remote: true },:style=>"float:right;margin-top:12px;" do %>
