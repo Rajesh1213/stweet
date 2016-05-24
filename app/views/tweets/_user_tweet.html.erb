@@ -1,6 +1,6 @@
 <li class="list-group-item tweet-height <%= "tweet_#{user_tweet.tweet.id}"%>">
   <% unless @user %>
-      <%= link_to tweet_path(user_tweet.tweet), method: :delete, id: user_tweet.tweet.id, data: { confirm: "Are you sure want to delete this tweet?", remote: true },:style=>"float:right" do %>
+      <%= link_to tweet_path(user_tweet.tweet), method: :delete, id: user_tweet.tweet.id, data: { confirm: "Are you sure want to delete this tweet?", remote: true },:style=>"float:right;margin-top:12px;" do %>
           <%= image_tag 'delete.png',:width=>"24", :height=>"24"%>
       <% end if current_user.id == user_tweet.user.id%>
   <% end %>
