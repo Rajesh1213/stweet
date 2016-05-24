@@ -5,8 +5,8 @@
           <i class="glyphicon glyphicon-retweet"></i>
       <% end %>
   <% else %>
-      <%= link_to tweet_path(tweet), method: :delete, id: tweet.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right" do %>
-          <i class="glyphicon glyphicon-trash"></i>
+      <%= link_to tweet_path(tweet), method: :delete, id: tweet.id, data: { confirm: "Are you sure want to delete this tweet?", remote: true },:style=>"float:right" do %>
+          <%= image_tag 'delete.png',:width=>"24", :height=>"24"%>
       <% end %>
   <% end %>
   <% if user.user_profile.present?%>

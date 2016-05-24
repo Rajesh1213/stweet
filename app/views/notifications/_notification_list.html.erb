@@ -9,8 +9,8 @@
                 <%=  image_tag 'thumb_profile.jpg'%>
             <% end %>
             <b><%= link_to notification.user.name, user_path(notification.user.id),:id => notification.user.id,:style=>"margin-left:10px;" %></b> has Followed You.
-            <%= link_to notification_path(notification), method: :delete, id: notification.id, data: { confirm: "Are you sure?", remote: true },:style=>"float:right;" do %>
-                <i class="glyphicon glyphicon-trash"></i>
+            <%= link_to notification_path(notification), method: :delete, id: notification.id, data: { confirm: "Are you sure want to delete this notification?", remote: true },:style=>"float:right;" do %>
+                <%= image_tag 'delete.png',:width=>"24", :height=>"24"%>
             <% end %>
           </li>
       <% end %>
