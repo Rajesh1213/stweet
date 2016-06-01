@@ -26,7 +26,7 @@ function tweetcountChar(val) {
     var max = 50;
     var len = val.value.length;
     if (len >= max) {
-        $('#tweetChar').text(' You have reached the limit (maximum is 50 characters))');
+        $('#tweetChar').text(' You have reached the limit (maximum is 50 characters)');
     } else {
         var char = max - len;
         $('#tweetChar').text(char + ' Characters Left');
