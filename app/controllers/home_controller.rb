@@ -26,7 +26,7 @@ class HomeController < ApplicationController
       @q = User.search(name_or_email_cont: q)
       @users= @q.result(:distinct => true)
     else
-      flash[:notice] = "Enter User Name"
+      flash[:notice] = "Enter UserName"
       redirect_to root_path
     end
   end
